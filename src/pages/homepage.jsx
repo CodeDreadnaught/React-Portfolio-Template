@@ -6,8 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faTwitter,
 	faGithub,
-	faStackOverflow,
-	faInstagram,
+	faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
@@ -60,7 +59,7 @@ const Homepage = () => {
 
 	const logoStyle = {
 		display: "flex",
-		position: stayLogo ? "fixed" : "relative",
+		position: stayLogo ? "fixed" : "absolute",
 		top: stayLogo ? "3vh" : "auto",
 		zIndex: 999,
 		border: stayLogo ? "1px solid white" : "none",
@@ -80,7 +79,9 @@ const Homepage = () => {
 			</Helmet>
 
 			<div className="page-content">
-				<NavBar active="home" />
+				<section>
+					<NavBar active="home" />
+				</section>
 				<div className="content-wrapper">
 					<div className="homepage-logo-container">
 						<div style={logoStyle}>
@@ -98,22 +99,7 @@ const Homepage = () => {
 								<div className="subtitle homepage-subtitle">
 									{INFO.homepage.description}
 								</div>
-							</div>
-
-							<div className="homepage-first-area-right-side">
-								<div className="homepage-image-container">
-									<div className="homepage-image-wrapper">
-										<img
-											src="homepage.jpg"
-											alt="about"
-											className="homepage-image"
-										/>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="homepage-socials">
+								<div className="homepage-socials">
 							<a
 								href={INFO.socials.twitter}
 								target="_blank"
@@ -135,26 +121,6 @@ const Homepage = () => {
 								/>
 							</a>
 							<a
-								href={INFO.socials.stackoverflow}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faStackOverflow}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faInstagram}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
 								href={`mailto:${INFO.main.email}`}
 								target="_blank"
 								rel="noreferrer"
@@ -164,13 +130,37 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
+							<a
+								href={INFO.socials.linkedin}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faLinkedin}
+									className="homepage-social-icon"
+								/>
+							</a>
+						</div>
+							</div>
+
+							<div className="homepage-first-area-right-side">
+								<div className="homepage-image-container">
+									<div className="homepage-image-wrapper">
+										<img
+											src="homepage.jpg"
+											alt="about"
+											className="homepage-image"
+										/>
+									</div>
+								</div>
+							</div>
 						</div>
 
 						<div className="homepage-projects">
 							<AllProjects />
 						</div>
 
-						<div className="homepage-after-title">
+						{/* <div className="homepage-after-title">
 							<div className="homepage-articles">
 								{myArticles.map((article, index) => (
 									<div
@@ -191,7 +181,7 @@ const Homepage = () => {
 							<div className="homepage-works">
 								<Works />
 							</div>
-						</div>
+						</div> */}
 
 						<div className="page-footer">
 							<Footer />

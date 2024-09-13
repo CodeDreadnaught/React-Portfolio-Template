@@ -4,7 +4,9 @@
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	padding-top: 130px;
+	padding-top: 90px;
+	position: relative;
+	height: 12vh;
 }
 
 .homepage-container {
@@ -103,24 +105,27 @@
 		flex-direction: column; /* Changed: set direction to column */
 		align-items: flex-start;
 		width: 100%;
-		order: 2;
+		order: 1;
 	}
 
 	.homepage-title {
 		width: 100% !important;
 		margin-top: 20px;
-		order: 2;
+		order: 1;
 	}
 
 	.homepage-subtitle {
 		width: 100% !important;
 		margin-top: 10px;
+		order: 2;
+	}
+	.homepage-socials {
 		order: 3;
 	}
 
 	.homepage-first-area-right-side {
 		width: 100%;
-		order: 1;
+		order: 2;
 	}
 
 	.homepage-image-container {

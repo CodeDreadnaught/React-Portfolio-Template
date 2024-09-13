@@ -2,37 +2,37 @@ const SEO = [
 	{
 		page: "home",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"I'm Olumide, a seasoned Software Engineer with a proven track record in crafting high-perfomance, user-centric and inclusive web applications utilizing cutting-edge frontend technologies.",
+		keywords: ["CodeDreadnaught", "Olumide Akinsoyinu", "Olumide", "Akinsoyinu"],
 	},
 
 	{
 		page: "about",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"I'm Olumide Akinsoyinu, passionate about creating seamless and engaging digital experiences.",
+			keywords: ["CodeDreadnaught", "Olumide Akinsoyinu", "Olumide", "Akinsoyinu"],
 	},
 
-	{
-		page: "articles",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
-	},
+	// {
+	// 	page: "articles",
+	// 	description:
+	// 		"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
+	// 		keywords: ["CodeDreadnaught", "Olumide Akinsoyinu", "Olumide", "Akinsoyinu"],
+	// },
 
 	{
-		page: "projects",
+		page: "portfolio",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
-	},
+			"I’ve worked on a lot of projects over the years and these are some of the recent ones.",
+			keywords: ["CodeDreadnaught", "Olumide Akinsoyinu", "Olumide", "Akinsoyinu"],
+	}
 
-	{
-		page: "contact",
-		description:
-			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
-	},
+	// {
+	// 	page: "contact",
+	// 	description:
+	// 		"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
+	// 		keywords: ["CodeDreadnaught", "Olumide Akinsoyinu", "Olumide", "Akinsoyinu"],
+	// },
 ];
 
 export default SEO;
