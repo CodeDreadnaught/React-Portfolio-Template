@@ -1,20 +1,27 @@
 @import "../../../data/styles.css";
 
+footer {
+	display: grid;
+	place-items: center;
+	height: 12.5vh;
+}
 .footer {
 	display: flex;
-	padding-top: 25px;
-	margin-top: 50px;
-	padding-bottom: 25px;
+	/* padding-top: 25px; */
+	/* margin-top: 50px; */
+	/* padding-bottom: 25px; */
+	width: 100%;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .footer-links,
 .footer-credits {
-	flex-basis: 50%;
+	/* flex-basis: 50%; */
 }
 
 .footer-links {
-	margin-left: -40px;
+	/* margin-left: -40px; */
 }
 
 .footer-nav-link-list {
@@ -22,6 +29,8 @@
 	list-style: none;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 !important;
+	gap: 2rem;
 }
 
 .footer-nav-link-item {
@@ -40,7 +49,7 @@
 
 .footer-credits-text {
 	justify-content: flex-end;
-	color: var(--tertiary-color);
+	color: var(--secondary-color);
 	font-size: 14px;
 	text-align: right;
 }
@@ -48,16 +57,11 @@
 @media (max-width: 600px) {
 	.footer {
 		flex-direction: column;
-		height: 85px;
-	}
-
-	.footer-links {
-		display: flex;
-		width: 100%;
-		justify-content: center;
+		padding-bottom: 1rem;
 	}
 
 	.footer-nav-link-list {
 		width: 100%;
+		gap: 1.5rem;
 	}
 }

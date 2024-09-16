@@ -38,7 +38,7 @@ const Homepage = () => {
 			let newLogoSize = 80 - (scroll * 4) / 10;
 
 			if (newLogoSize < oldLogoSize) {
-				if (newLogoSize > 40) {
+				if (newLogoSize > 45) {
 					setLogoSize(newLogoSize);
 					setOldLogoSize(newLogoSize);
 					setStayLogo(false);
@@ -79,9 +79,7 @@ const Homepage = () => {
 			</Helmet>
 
 			<div className="page-content">
-				<section>
-					<NavBar active="home" />
-				</section>
+				<NavBar active="home" />
 				<div className="content-wrapper">
 					<div className="homepage-logo-container">
 						<div style={logoStyle}>
@@ -117,16 +115,6 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faGithub}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={`mailto:${INFO.main.email}`}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faMailBulk}
 									className="homepage-social-icon"
 								/>
 							</a>

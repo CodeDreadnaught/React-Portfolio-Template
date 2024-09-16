@@ -5,7 +5,7 @@
 	justify-content: left;
 	align-items: center;
 	padding-top: 90px;
-	position: relative;
+	/* position: relative; */
 	height: 12vh;
 }
 
@@ -99,7 +99,9 @@
 	.homepage-first-area {
 		flex-direction: column;
 	}
-
+	.homepage-projects {
+		padding-top: 0;
+	}
 	.homepage-first-area-left-side {
 		display: flex;
 		flex-direction: column; /* Changed: set direction to column */
@@ -129,9 +131,10 @@
 	}
 
 	.homepage-image-container {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: 40px;
 		margin-left: 10px;
+		height: fit-content !important;
+		padding-bottom: 1rem;
 		order: 1;
 	}
 
